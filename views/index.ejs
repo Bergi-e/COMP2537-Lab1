@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Super Duper Amazing Counting Page</title>
+</head>
+
+<!-- Body page: background and foreground colours are determined by the user -->
+<body style="background: <%= bgColor %>; color: <%= fgColor %>;">
+    <!-- Count along with the up or down options -->
+    <h1>Your Count: <%= count %></h1>
+    <form action="/up" method="get">
+        <button type="submit">Up</button>
+    </form>
+    <form action="/down" method="get">
+        <button type="submit">Down</button>
+    </form>
+    <!-- Colour options to be chosen by the user -->
+    <p>
+        <a href="/changeStyle?color=green&bg=lightblue">Green on Light Blue</a> |
+        <a href="/changeStyle?color=red&bg=lightgrey">Red on Grey</a> |
+        <a href="/changeStyle?color=yellow&bg=pink">Yellow on Pink</a>
+    </p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Officiis nostrum ipsa sit illum eos tenetur 
+        quos hic aliquid alias atque porro, culpa amet, deleniti 
+        nesciunt reprehenderit repellendus saepe, expedita adipisci?
+    </p>
+</body>
+</html>
